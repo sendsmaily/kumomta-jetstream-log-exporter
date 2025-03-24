@@ -25,11 +25,11 @@ func CreateHandler(subject, natsURL string, opts ...nats.Option) (echo.HandlerFu
 	return func(c echo.Context) error {
 		payload, err := io.ReadAll(c.Request().Body)
 		if err != nil {
-			return echo.NewHTTPError(http.StatusInternalServerError, "error reading request body: %s", err)
+			return echo.NewHTTPError(http.StatusInternalServerError, fmt.Sprintf("error reading request body: %s", err))
 		}
 
 		if _, err := js.Publish(c.Request().Context(), subject, payload); err != nil {
-			return echo.NewHTTPError(http.StatusBadGateway, "error forwarding log record: %s", err)
+			return echo.NewHTTPError(http.StatusBadGateway, fmt.Sprintf("error forwarding log record: %s", err))
 		}
 
 		return c.NoContent(http.StatusAccepted)
