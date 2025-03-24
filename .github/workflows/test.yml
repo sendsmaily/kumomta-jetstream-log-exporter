@@ -27,5 +27,5 @@ jobs:
           cache: true
       - run: go mod download
       - run: go install tool
-        run: ginkgo -r ./...
+      - run: ginkgo -r ./...
         timeout-minutes: 10
