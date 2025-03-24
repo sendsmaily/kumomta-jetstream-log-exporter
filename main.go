@@ -7,6 +7,7 @@ import (
 	"github.com/labstack/echo/v4/middleware"
 	"github.com/nats-io/nats.go"
 	"github.com/samber/lo"
+	"github.com/sendsmaily/kumomta-jetstream-log-exporter/http"
 	v1 "github.com/sendsmaily/kumomta-jetstream-log-exporter/http/v1"
 	"github.com/spf13/cobra"
 )
@@ -46,6 +47,7 @@ func main() {
 			e := echo.New()
 
 			e.Use(middleware.Recover())
+			e.Use(http.ErrorLogger())
 
 			e.POST("/v1/record", handler)
 
