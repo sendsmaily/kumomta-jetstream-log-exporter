@@ -1,0 +1,51 @@
+{
+  "type": "Delivery",
+  "id": "1d98076abbbc11ed940250ebf67f93bd",
+  "sender": "sender@smaily.test",
+  "recipient": "recipient@smaily.test",
+  "queue": "campaign:tenant@domain",
+  "site": "source2.mx.smaily.test.",
+  "size": 1047,
+  "response": {
+    "code": 250,
+    "enhanced_code": {
+      "class": 2,
+      "subject": 0,
+      "detail": 0
+    },
+    "content": "OK ids=8a5475ccbbc611eda12250ebf67f93bd",
+    "command": "."
+  },
+  "peer_address": {
+    "name": "mx.smaily.test.",
+    "addr": "172.16.0.1"
+  },
+  "timestamp": 1678069691,
+  "created": 1678069691,
+  "num_attempts": 0,
+  "bounce_classification": "Uncategorized",
+  "egress_pool": "pool0",
+  "egress_source": "source2",
+  "source_address": {
+    "address": "10.0.0.1:53210",
+    "protocol": "socks5",
+    "server": "127.0.0.1:5000"
+  },
+  "feedback_report": null,
+  "meta": {},
+  "headers": {},
+  "delivery_protocol": "ESMTP",
+  "reception_protocol": "ESMTP",
+  "nodeid": "557f3ad4-2c8c-11ee-976e-782d7e12e173",
+  "tls_cipher": "TLS_AES_256_GCM_SHA384",
+  "tls_protocol_version": "TLSv1.3",
+  "tls_peer_subject_name": [
+    "C=ET",
+    "ST=Harjumaa",
+    "L=Tallinn",
+    "O=Smaily",
+    "OU=Developers",
+    "CN=developers.smaily.test"
+  ],
+  "session_id": "9bcd689e-23d9-41b7-a015-63a1382f8b57"
+}
