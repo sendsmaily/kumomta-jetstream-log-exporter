@@ -1,0 +1,10 @@
+devcontainers
+errorf
+goarch
+gomod
+goreleaser
+jetstream
+kumomta
+ldflags
+sendsmaily
+trimpath

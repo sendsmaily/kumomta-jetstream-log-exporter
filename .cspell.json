@@ -1,0 +1,25 @@
+{
+  "languageSettings": [
+    {
+      "languageId": "go",
+      "allowCompoundWords": false,
+      "includeRegExpList": ["CStyleComment", "string"],
+      "ignoreRegExpList": [
+        // Ignore multiline imports.
+        "import\\s*\\((.|[\r\n])*?\\)",
+        // Ignore single line imports.
+        "import\\s*.*\".*?\"",
+        // Ignore go generate directive.
+        "//\\s*go:generate.*"
+      ]
+    }
+  ],
+  "dictionaries": ["workspace"],
+  "dictionaryDefinitions": [
+    {
+      "name": "workspace",
+      "path": "./.cspell/dictionary.txt",
+      "addWords": true
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "name": "kumomta-jetstream-log-exporter",
+  "image": "mcr.microsoft.com/devcontainers/go:1-1.24-bookworm",
+  "postCreateCommand": "go install tool"
+}
