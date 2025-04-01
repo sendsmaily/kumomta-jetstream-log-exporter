@@ -45,6 +45,7 @@ func main() {
 			}
 
 			e := echo.New()
+			e.HideBanner = true
 
 			e.Use(middleware.Recover())
 			e.Use(http.ErrorLogger())
@@ -55,7 +56,7 @@ func main() {
 		},
 	}
 
-	cmd.Flags().StringVar(&listenAddr, "listen", "127.0.0.1:8080", "Listen address")
+	cmd.Flags().StringVar(&listenAddr, "listen", "127.0.0.1:8765", "Listen address")
 	cmd.Flags().StringVar(&natsURL, "nats-url", "nats://localhost:4222", "NATS cluster's URL")
 	cmd.Flags().StringVar(&natsTLSKeyFile, "nats-tls-key", "", "Path to the NATS' TLS key file")
 	cmd.Flags().StringVar(&natsTLSCertFile, "nats-tls-cert", "", "Path to the NATS' TLS certificate file")
