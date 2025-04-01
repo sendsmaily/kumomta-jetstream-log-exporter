@@ -49,7 +49,7 @@ func main() {
 			e.Use(middleware.Recover())
 			e.Use(http.ErrorLogger())
 
-			e.POST("/v1/record", handler)
+			e.POST("/v1/logrecord", handler)
 
 			return e.Start(listenAddr)
 		},

@@ -6,5 +6,6 @@ goreleaser
 jetstream
 kumomta
 ldflags
+logrecord
 sendsmaily
 trimpath
