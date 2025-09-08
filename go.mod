@@ -6,7 +6,7 @@ require (
 	github.com/labstack/echo/v4 v4.13.4
 	github.com/nats-io/nats-server/v2 v2.11.8
 	github.com/nats-io/nats.go v1.45.0
-	github.com/onsi/ginkgo/v2 v2.25.2
+	github.com/onsi/ginkgo/v2 v2.25.3
 	github.com/onsi/gomega v1.38.2
 	github.com/samber/lo v1.51.0
 	github.com/spf13/cobra v1.10.1
